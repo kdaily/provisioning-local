@@ -1,4 +1,6 @@
 ---
   - include: upgrade.yml
   - include: chrome.yml
+  - include: r.yml
+  - include: rstudio-preview.yml
 
