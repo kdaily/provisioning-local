@@ -1,0 +1,6 @@
+- name: install R
+  dnf:
+    name: R-core
+    state: present
+  become: yes
+
