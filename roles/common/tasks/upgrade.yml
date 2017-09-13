@@ -4,4 +4,52 @@
     state: latest
   become: yes
 
+- name: install the 'Development tools' package group
+  dnf:
+    name: '@Development tools'
+    state: present
+  become: yes
 
+- name: libselinux-python (for ansible file copy module)
+  dnf:
+    name: "libselinux-python"
+    state: present
+  become: yes
+
+- name: s3 tools
+  dnf:
+    name: "s3cmd"
+  become: yes
+
+- name: htop
+  dnf:
+    name: "htop"
+  become: yes
+
+- name: screen
+  dnf:
+    name: "screen"
+  become: yes
+
+- name: tilix terminal emulator
+  dnf:
+    name: "tilix"
+  become: yes
+
+- name: OpenSSL development files
+  dnf:
+    name: "openssl-devel"
+    state: present
+  become: yes
+
+- name: install libcurl development files
+  dnf:
+    name: libcurl-devel
+    state: present
+  become: yes
+
+- name: gnome tweak tool
+  dnf:
+    name: "gnome-tweak-tool"
+    state: present
+  become: yes

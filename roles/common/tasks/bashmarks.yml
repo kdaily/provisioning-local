@@ -1,0 +1,10 @@
+- name: get bashmarks from github
+  git:
+    repo: 'https://github.com/huyng/bashmarks.git'
+    dest: /home/kdaily/src/bashmarks/
+
+- name: install bashmarks
+  make:
+    chdir: /home/kdaily/src/bashmarks
+    target: install
+

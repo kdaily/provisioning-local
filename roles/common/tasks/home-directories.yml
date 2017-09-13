@@ -1,0 +1,31 @@
+- name: create project directory
+  file:
+    path: /home/kdaily/Projects
+    state: directory
+    mode: 0755
+
+- name: create src directory
+  file:
+    path: /home/kdaily/src
+    state: directory
+    mode: 0755
+
+- name: get personal repo (with dotfiles)
+  git:
+    repo: 'git@github.com:kdaily/personal.git'
+    dest: /home/kdaily/Documents/personal/
+    accept_hostkey: true
+
+- copy:
+    src: /home/kdaily/Documents/personal/dotfiles/.screenrc
+    dest: /home/kdaily/.screenrc
+    owner: kdaily
+    group: kdaily
+    mode: 0644
+
+- copy:
+    src: /home/kdaily/Documents/personal/dotfiles/.gitconfig
+    dest: /home/kdaily/.gitconfig
+    owner: kdaily
+    group: kdaily
+    mode: 0644

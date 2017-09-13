@@ -4,3 +4,12 @@
     state: present
   become: yes
 
+- name: install R development files
+  dnf:
+    name: R-devel
+    state: present
+  become: yes
+
+- name: install tidyverse package
+  command: Rscript -e 'install.packages("tidyverse", repos="https://cran.rstudio.com")'
+
