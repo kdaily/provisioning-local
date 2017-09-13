@@ -16,6 +16,21 @@
     state: present
   become: yes
 
+- name: hddtemp
+  dnf:
+    name: "hddtemp"
+  become: yes
+
+- name: lm_sensors
+  dnf:
+    name: "lm_sensors"
+  become: yes
+
+- name: s3 tools
+  dnf:
+    name: "s3cmd"
+  become: yes
+
 - name: s3 tools
   dnf:
     name: "s3cmd"
