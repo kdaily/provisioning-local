@@ -3,6 +3,5 @@
   - include: home-directories.yml tags=home
   - include: chrome.yml
   - include: r.yml
-  - include: rstudio-preview.yml
   - include: bashmarks.yml
   - include: atom.yml
