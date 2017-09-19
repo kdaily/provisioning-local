@@ -1,6 +1,0 @@
-- name: install rstudio preview
-  dnf:
-    name: "https://s3.amazonaws.com/rstudio-dailybuilds/rstudio-1.1.359-x86_64.rpm"
-    state: present
-  become: yes
-

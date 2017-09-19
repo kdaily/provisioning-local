@@ -2,5 +2,6 @@
   hosts: local
   connection: local
   roles:
-    - common
-
+    - { role: common, tags: ['common'] }
+    - { role: virtualenv, tags: ['virtualenv']}
+    - { role: visidata, tags: ['visidata']}
