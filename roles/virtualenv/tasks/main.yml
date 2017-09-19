@@ -1,0 +1,11 @@
+- name: install virtualenv python2
+  pip:
+    name: virtualenv
+    executable: pip-2
+  become: yes
+
+- name: install virtualenvwrapper python2
+  pip:
+    name: virtualenvwrapper
+    executable: pip-2
+  become: yes

@@ -1,0 +1,5 @@
+- name: install slack
+  dnf:
+    name: "https://downloads.slack-edge.com/linux_releases/slack-2.8.0-0.1.fc21.x86_64.rpm"
+    state: present
+  become: yes

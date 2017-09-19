@@ -1,0 +1,5 @@
+- name: install visidata python3 required
+  pip:
+    name: visidata
+    virtualenv: /home/kdaily/.virtualenvs/visidata
+    virtualenv_python: python3
