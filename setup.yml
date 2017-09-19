@@ -5,3 +5,6 @@
     - { role: common, tags: ['common'] }
     - { role: virtualenv, tags: ['virtualenv']}
     - { role: visidata, tags: ['visidata']}
+    - { role: rstudio-preview, tags: ['rstudio-preview']}
+    - { role: ipython, tags: ['ipython']}
+    - { role: slack, tags: ['slack']}
