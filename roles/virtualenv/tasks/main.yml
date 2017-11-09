@@ -9,3 +9,12 @@
     name: virtualenvwrapper
     executable: pip-2
   become: yes
+
+- copy:
+    src: /usr/bin/virtualenvwrapper.sh
+    dest: /etc/profile.d/virtualenvwrapper.sh
+    owner: root
+    group: root
+    mode: 0755
+  become: yes
+  
