@@ -1,0 +1,5 @@
+- name: install rstudio
+  dnf:
+    name: "https://download1.rstudio.org/rstudio-1.1.383-x86_64.rpm"
+    state: present
+  become: yes

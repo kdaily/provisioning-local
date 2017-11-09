@@ -1,0 +1,5 @@
+- name: install openvpn
+  dnf:
+    name: "openvpn"
+    state: present
+  become: yes

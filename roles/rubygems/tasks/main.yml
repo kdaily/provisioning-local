@@ -1,0 +1,5 @@
+- name: install rubygems
+  dnf:
+    name: "rubygems"
+    state: present
+  become: yes
