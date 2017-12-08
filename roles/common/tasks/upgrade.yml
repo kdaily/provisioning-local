@@ -68,3 +68,9 @@
     name: "gnome-tweak-tool"
     state: present
   become: yes
+
+- name: redhat rpm config
+  dnf:
+    name: "redhat-rpm-config"
+    state: present
+  become: yes
