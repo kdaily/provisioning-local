@@ -12,10 +12,9 @@ cd provisioning-local
 
 echo -e "please make sure to edit the config.json file followed by [ENTER]" && read USELESS_VAR
 
-if [ ! -f /home/kdaily/.ssh/id_rsa.pub ]
+if [ ! -f ~/.ssh/id_rsa.pub ]
 then
-  echo "No public SSH key found - be sure it is added to Github as well."
-  exit 1
+  curl https://raw.githubusercontent.com/kdaily/provisioning-local/master/id_rsa.pub > ~/.ssh/id_rsa.pub
 else
   ansible-playbook setup.yml -i HOSTS --ask-sudo-pass --module-path ./ansible_modules --extra-vars "@config.json"
 fi
