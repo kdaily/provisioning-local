@@ -1,6 +1,6 @@
 # from https://github.com/JBKahn/provisioning-local/
 
-sudo dnf install python2-setuptools git python2-devel libxml2-devel libxslt-devel ansible python2-dnf
+sudo dnf install -y python2-setuptools git python2-devel libxml2-devel libxslt-devel ansible python2-dnf
 
 sudo easy_install pip
 
