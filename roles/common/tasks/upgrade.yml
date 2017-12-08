@@ -74,3 +74,15 @@
     name: "redhat-rpm-config"
     state: present
   become: yes
+
+- name: gimp
+  dnf:
+    name: "gimp"
+    state: present
+  become: yes
+
+- name: inkscape
+  dnf:
+    name: "inkscape"
+    state: present
+  become: yes
