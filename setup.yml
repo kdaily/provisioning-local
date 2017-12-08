@@ -14,3 +14,4 @@
     - { role: google-chrome, tags: ['google-chrome']}
     - { role: r, tags: ['r']}
     - { role: home-dirs, tags: ['home-dirs']}
+    - { role: bashmarks, tags: ['bashmarks']}
