@@ -12,4 +12,3 @@
 
 - name: install tidyverse package
   command: Rscript -e 'install.packages("tidyverse", repos="https://cran.rstudio.com")'
-
