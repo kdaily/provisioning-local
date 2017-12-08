@@ -16,5 +16,5 @@ if [ ! -f ~/.ssh/id_rsa.pub ]
 then
   curl https://raw.githubusercontent.com/kdaily/provisioning-local/master/id_rsa.pub > ~/.ssh/id_rsa.pub
 else
-  ansible-playbook setup.yml -i HOSTS --ask-sudo-pass --module-path ./ansible_modules --extra-vars "@config.json"
+  ansible-playbook setup.yml -i HOSTS --become --module-path ./ansible_modules --extra-vars "@config.json"
 fi
