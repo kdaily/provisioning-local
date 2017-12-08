@@ -11,3 +11,6 @@
     - { role: awscli, tags: ['awscli']}
     - { role: rubygems, tags: ['rubygems']}
     - { role: openvpn, tags: ['openvpn']}
+    - { role: google-chrome, tags: ['google-chrome']}
+    - { role: r, tags: ['r']}
+    - { role: home-dirs, tags: ['home-dirs']}
