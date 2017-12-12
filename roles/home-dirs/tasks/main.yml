@@ -10,11 +10,11 @@
     state: directory
     mode: 0755
 
-- name: get personal repo (with dotfiles)
-  git:
-    repo: 'git@github.com:kdaily/personal.git'
-    dest: /home/kdaily/Documents/personal/
-    accept_hostkey: true
+#- name: get personal repo (with dotfiles)
+#  git:
+#    repo: 'git@github.com:kdaily/personal.git'
+#    dest: /home/kdaily/Documents/personal/
+#    accept_hostkey: true
 
 - copy:
     src: /home/kdaily/Documents/personal/dotfiles/.screenrc
