@@ -15,3 +15,5 @@
     - { role: r, tags: ['r']}
     - { role: home-dirs, tags: ['home-dirs']}
     - { role: bashmarks, tags: ['bashmarks']}
+    - { role: atom, tags: ['atom']}
+    - { role: rubygems, tags: ['rubygems']}
